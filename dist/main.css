@@ -48,28 +48,79 @@
       -ms-flex: 1;
           flex: 1;
 }
-.flatpickr-current-month .flatpickr-monthDropdown-months {
-  appearance: menulist;
-  background: var(--flatpickr-header-background);
+.cart-product-form-wrapper [data-picker-inline="true"] {
+  background: none;
   border: none;
-  border-radius: 0;
-  box-sizing: border-box;
-  color: inherit;
-  cursor: pointer;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: 300;
+  padding: 0;
+  display: block;
   height: auto;
-  line-height: inherit;
-  margin: -1px 0 0 0;
+}
+.cart-product-form-wrapper [data-picker-inline="true"]:focus-within {
+  background-color: unset;
   outline: none;
-  padding: 0 0 0 0.5ch;
-  position: relative;
-  vertical-align: initial;
-  -webkit-box-sizing: border-box;
-  -webkit-appearance: menulist;
-  -moz-appearance: menulist;
-  width: auto;
+  outline-offset: unset;
+}
+.cart-product-form-wrapper [data-picker-inline="true"] .flatpickr-input {
+  background: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+      padding: 7px 12px;
+  margin: 6px 0 4px;
+}
+.cart-product-form-wrapper [data-picker-inline="true"] .flatpickr-input:focus-within {
+  
+    background-color: #fff;
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+/* Making inline datepicker hidden when form submitted */ 
+.flatpickr-calendar.inline {
+    visibility: inherit;
+}
+
+/* Fix react form block style */
+.form-field-border-all .sqs-block-form .form-item .flatpickr-calendar select~div {
+  right: 0 !important;
+}
+/* Fix react form block style - move dropdown up */
+.sqs-block-form .flatpickr-calendar .flatpickr-monthDropdown-months, 
+.sqs-block-form .flatpickr-calendar .numInputWrapper {
+  top: 0;
+}
+
+.sqs-block-form .field-list .flatpickr-current-month input.cur-year,
+.flatpickr-current-month input.cur-year {
+  border: none !important;
+  background: none !important;
+  color: inherit !important;
+  font-size: inherit !important;
+}
+
+.sqs-block-form .field-list .flatpickr-current-month select.flatpickr-monthDropdown-months,
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  appearance: menulist !important;
+  background: var(--flatpickr-header-background) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-sizing: border-box !important;
+  color: inherit !important;
+  cursor: pointer !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: 300 !important;
+  height: auto !important;
+  line-height: inherit !important;
+  margin: -1px 0 0 0 !important;
+  outline: none !important;
+  padding: 0 0 0 0.5ch !important;
+  position: relative !important;
+  vertical-align: initial !important;
+  -webkit-box-sizing: border-box !important;
+  -webkit-appearance: menulist !important;
+  -moz-appearance: menulist !important;
+  width: auto !important;
 }
 .flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
   background-color: var(--flatpickr-header-background);
