@@ -180,3 +180,6 @@ span.flatpickr-weekday {
   color: var(--flatpickr-header-color);
   fill: var(--flatpickr-header-color);
 }
+.sqs-site-style-form .field-list [data-picker].field:not(.checkbox,.radio,.likert) .description~.form-input-effects, .sqs-site-style-form .field-list [data-picker].field:not(.checkbox,.radio,.likert) .description~.form-input-prefix {
+    grid-row: 3;
+}
