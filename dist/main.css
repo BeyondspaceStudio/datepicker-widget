@@ -88,6 +88,7 @@
 .sqs-block-form .flatpickr-calendar .flatpickr-monthDropdown-months, 
 .sqs-block-form .flatpickr-calendar .numInputWrapper {
   top: 0;
+  right: auto !important;
 }
 
 .sqs-block-form .field-list .flatpickr-current-month input.cur-year,
@@ -95,7 +96,6 @@
   border: none !important;
   background: none !important;
   color: inherit !important;
-  font-size: inherit !important;
 }
 
 .sqs-block-form .field-list .flatpickr-current-month select.flatpickr-monthDropdown-months,
