@@ -22,6 +22,7 @@
 .flatpickr-calendar .flatpickr-monthDropdown-months,
 .flatpickr-calendar .numInputWrapper {
 	top: 5px;
+	right: auto !important;
 }
 .flatpickr-calendar.arrowBottom:after {
     border-top-color: #ffffff;
