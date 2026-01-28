@@ -97,6 +97,7 @@
   border: none !important;
   background: none !important;
   color: inherit !important;
+  padding: var(--form-field-padding-vertical, 8px);
 }
 
 .sqs-block-form .field-list .flatpickr-current-month select.flatpickr-monthDropdown-months,
